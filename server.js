@@ -14,6 +14,8 @@ app.use(helmet());
 app.use(cors({ origin: process.env.ALLOWED_ORIGINS?.split(',') || '*' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Раздаем статические файлы (index.html, css, img) из текущей директории
 app.use(express.static(path.join(__dirname)));
 
 const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
