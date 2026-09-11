@@ -2,30 +2,10 @@
 # Dependencies
 node_modules/
 
-# Environment
+# Environment variables
 .env
-.env.local
-*.env.*
 
 # Logs
 *.log
-
-# Editor
-.vscode/
-.idea/
-
-# Build artifacts
-dist/
-build/
-target/
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-venv/
-.venv/
-.env/
+server.log
 ```
