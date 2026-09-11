@@ -1,0 +1,17 @@
+Сервер запущен на порту 3000
+Error: Invalid login: 535 5.7.8 Error: authentication failed: Invalid user or password! 1789043659-IYO6j3pgD8c0
+    at SMTPConnection._formatError (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:809:19)
+    at SMTPConnection._actionAUTHComplete (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:1588:34)
+    at SMTPConnection.<anonymous> (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:556:26)
+    at SMTPConnection._processResponse (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:993:20)
+    at SMTPConnection._onData (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:774:14)
+    at SMTPConnection._onSocketData (/workspace/node_modules/nodemailer/lib/smtp-connection/index.js:195:44)
+    at TLSSocket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5) {
+  code: 'EAUTH',
+  response: '535 5.7.8 Error: authentication failed: Invalid user or password! 1789043659-IYO6j3pgD8c0',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
